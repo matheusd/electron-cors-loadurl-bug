@@ -1,0 +1,15 @@
+{
+  "name": "electron-cors-loadurl-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "reuse": "NODE_ENV=production electron ./electron-main.js --renderer-process-reuse",
+    "no-reuse": "NODE_ENV=production electron ./electron-main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^12.0.2"
+  }
+}

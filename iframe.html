@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script>
+        console.log("YYYYYY inside test-iframe", window);
+        try {
+            console.log("YYYY parent window:", window.parent);
+        } catch (error) {
+            console.log("YYYY caught the following error");
+            console.error(error);
+        }
+        console.log("YYYYY parent element:", window.parent.document.getElementById("MARCO"))
+        console.log("YYYYY parent element:", window.parent.document.getElementById("MARCO").innerText);
+    </script>
+  </head>
+
+  <body>
+    <p>iframe.html</p>
+    <div id="ZIGGY">STARDUST</div>
+  </body>
+</html>
